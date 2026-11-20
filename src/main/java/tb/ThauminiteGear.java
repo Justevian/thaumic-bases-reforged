@@ -70,7 +70,7 @@ final class ThauminiteGear {
             Bases.id("textures/model/thauminite_wand_cap.png"));
         ResearchCategories.addResearch(new BasesResearch(key, Bases.ID,
             new AspectList().add(Aspect.METAL, 6).add(Aspect.MAGIC, 4), 4, 2, 2, TcStack.of(Bases.id(item).toString()))
-            .setParents("TB.Thauminite", "CAP_thaumium").setPages(ResearchPage.text("tc.research_page." + key + ".1"),
+            .setParents("TB.Thauminite").setPages(ResearchPage.text("tc.research_page." + key + ".1"),
                 recipe(key, item, 25, "###", "#@#", "@@@")));
     }
 

@@ -131,7 +131,7 @@ final class BasesCrops {
         TcRecipes.register(new CrucibleRecipe(duplicate, multiplication, TcStack.of(salis, 2),
             TcIngredient.item(salis), duplicationCost));
         ResearchCategories.addResearch(new BasesResearch(multiplication, Bases.ID, duplicationCost,
-            0, -2, 1, TcStack.of(salis)).setParents("CRUCIBLE")
+            0, -2, 1, TcStack.of(salis)).setParents("CRUCIBLE", "TB.Quicksilver", "TB.Amber")
             .setPages(ResearchPage.text("tc.research_page.TB.SM.1"), ResearchPage.crucible(duplicate)));
         String saltId = Bases.id(SALT).toString();
         String unpackId = Bases.id("salis_mundus_from_block").toString();
@@ -146,13 +146,13 @@ final class BasesCrops {
             .setParents(multiplication).setPages(ResearchPage.text("tc.research_page.TB.SMB.1"),
                 ResearchPage.arcane(saltId), ResearchPage.crafting(unpackId)));
         add("Plax", "minecraft:wheat_seeds", "TB.BasicPlants", -4, 2, new AspectList().add(Aspect.CLOTH, 4));
-        add("Metalleat", "minecraft:wheat_seeds", "TB.Plax", -2, 2,
+        add("Metalleat", "minecraft:wheat_seeds", "TB.BasicPlants", -2, 2,
             new AspectList().add(Aspect.ORDER, 4).add(Aspect.METAL, 12).add(Aspect.LIFE, 4));
         add("Lucrite", "minecraft:carrot", "TB.Metalleat", 0, 2,
             new AspectList().add(Aspect.HUNGER, 4).add(Aspect.GREED, 12).add(Aspect.LIFE, 4));
-        add("Lazullia", "minecraft:wheat_seeds", "TB.Plax", -3, 4,
+        add("Lazullia", "minecraft:wheat_seeds", "TB.Metalleat", -3, 4,
             new AspectList().add(Aspect.SENSES, 12).add(Aspect.GREED, 3));
-        add("Glieonia", "minecraft:azure_bluet", "TB.Plax", -5, 4,
+        add("Glieonia", "minecraft:azure_bluet", "TB.Aurelia", -5, 4,
             new AspectList().add(Aspect.LIGHT, 8).add(Aspect.MAGIC, 6).add(Aspect.LIFE, 4));
     }
 

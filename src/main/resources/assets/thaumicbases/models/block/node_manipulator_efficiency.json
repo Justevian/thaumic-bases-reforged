@@ -1,0 +1,1 @@
+{"parent":"minecraft:block/block","loader":"neoforge:obj","model":"thaumicbases:models/block/node_manipulator.obj","automatic_culling":false,"emissive_ambient":false,"flip_v":true,"textures":{"particle":"thaumicbases:block/node_manipulator","base":"thaumicbases:block/node_manipulator","focus":"thaumicbases:block/node_focus_efficiency"}}

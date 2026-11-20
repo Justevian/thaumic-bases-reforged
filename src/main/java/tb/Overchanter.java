@@ -89,7 +89,7 @@ final class Overchanter extends Block implements EntityBlock, WandInteractable {
     protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos,
                                           Player player, InteractionHand hand, BlockHitResult hit) {
         if (Wands.isWand(stack) || !(level.getBlockEntity(pos) instanceof Table table) || !table.stack.isEmpty()
-            || nextEnchantment(stack) == null) return InteractionResult.PASS;
+            || nextEnchantment(stack) == null) return InteractionResult.TRY_WITH_EMPTY_HAND;
         if (!level.isClientSide()) {
             table.stack = stack.copyWithCount(1);
             stack.consume(1, player);
@@ -249,7 +249,7 @@ final class Overchanter extends Block implements EntityBlock, WandInteractable {
         TcRecipes.register(new InfusionRecipe(id, key, result, 4, cost, TcIngredient.item("minecraft:enchanting_table"), components));
         ResearchCategories.addResearch(new BasesResearch(key, Bases.ID,
             new AspectList().add(Aspect.MAGIC, 8).add(Aspect.MIND, 8).add(Aspect.MECHANISM, 8), -12, 4, 3, result)
-            .setParents("INFUSIONENCHANTMENT", "TB.CrystalBlocks", "TB.SMB")
+            .setParents("INFUSION")
             .setPages(ResearchPage.text("tc.research_page." + key + ".1"), ResearchPage.infusion(id)));
     }
 }

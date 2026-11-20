@@ -134,7 +134,7 @@ final class SpreadingCrops {
     static void research() {
         registerResearch("TB.BasicPlants", "sweed_seeds", "CRUCIBLE", -4, 0,
             TcIngredient.item("minecraft:short_grass"), new AspectList().add(Aspect.MOTION, 2).add(Aspect.LIFE, 1));
-        registerResearch("TB.Redlon", "redlon_seeds", "TB.BasicPlants", -6, 2,
+        registerResearch("TB.Redlon", "redlon_seeds", "TB.Metalleat", -6, 2,
             TcIngredient.item("minecraft:melon_seeds"), new AspectList().add(Aspect.MECHANISM, 16).add(Aspect.ENERGY, 16));
     }
 

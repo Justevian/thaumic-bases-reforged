@@ -109,7 +109,7 @@ final class MagicalTrees {
     }
 
     static void research() {
-        add(Tree.GOLDEN_OAK, "TB.BasicPlants", -7, 5, 2, "minecraft:oak_sapling",
+        add(Tree.GOLDEN_OAK, "TB.Briar", -7, 5, 2, "minecraft:oak_sapling",
             new AspectList().add(Aspect.PLANT, 16).add(Aspect.GREED, 64),
             "minecraft:apple", "minecraft:apple", "minecraft:golden_apple", "minecraft:golden_apple");
         add(Tree.PEACEFUL, Tree.GOLDEN_OAK.research, -9, 4, 3, "minecraft:oak_sapling",

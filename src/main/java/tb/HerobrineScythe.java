@@ -104,7 +104,7 @@ final class HerobrineScythe extends Item implements Repairable, WarpingGear {
         var tags = new AspectList().add(Aspect.WEAPON, 16).add(Aspect.DEATH, 16).add(Aspect.ENERGY, 16)
             .add(Aspect.ELDRITCH, 8).add(Aspect.AURA, 6);
         ResearchCategories.addResearch(new BasesResearch(RESEARCH, Bases.ID, tags, 12, 2, 4, result)
-            .setParents("TB.VoidTools", "LIQUIDDEATH").setPages(
+            .setParents("VOIDMETAL").setPages(
                 ResearchPage.text("tc.research_page." + RESEARCH + ".1"), ResearchPage.infusion(id)));
     }
 }

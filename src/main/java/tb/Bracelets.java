@@ -71,7 +71,7 @@ final class Bracelets {
                 rod.craftCost(), rod.onUpdate(), rod.glowing(), false, false, rod.texture());
         }
 
-        arcane(Variant.IRON, "CAP_iron", 1, "thaumcraft:iron_wand_cap", "minecraft:iron_ingot", "minecraft:iron_nugget", "CIC", "N N");
+        arcane(Variant.IRON, null, 1, "thaumcraft:iron_wand_cap", "minecraft:iron_ingot", "minecraft:iron_nugget", "CIC", "N N");
         arcane(Variant.GOLD, Variant.IRON.key, 5, "thaumcraft:gold_wand_cap", "minecraft:gold_ingot", "minecraft:gold_nugget", "CIC", "N N");
         arcane(Variant.GREATWOOD, Variant.GOLD.key, 25, "thaumcraft:gold_wand_cap", "thaumcraft:greatwood_log", "", "CIC", "I I");
         arcane(Variant.THAUMIUM, Variant.GREATWOOD.key, 25, "thaumicbases:thauminite_wand_cap", "thaumcraft:thaumium_ingot",
@@ -142,7 +142,7 @@ final class Bracelets {
         var cost = primals(vis);
         TcRecipes.register(new ShapedArcaneRecipe(variant.recipe(), variant.key, variant.stack(), cost, 3, rows.length, grid));
         entry(variant, new AspectList().add(Aspect.CRAFT, 4).add(Aspect.MAGIC, 4),
-            ResearchPage.arcane(variant.recipe()), parent);
+            ResearchPage.arcane(variant.recipe()), parent == null ? new String[0] : new String[]{parent});
     }
 
     private static void infusion(Variant variant, String parent, int instability, AspectList cost,

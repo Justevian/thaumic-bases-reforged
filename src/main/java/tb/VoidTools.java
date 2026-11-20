@@ -65,7 +65,7 @@ final class VoidTools {
             TcIngredient.item("thaumcraft:void_seed"), List.of("wheat_seeds", "pumpkin_seeds", "melon_seeds",
                 "carrot", "potato", "nether_wart").stream().map(name -> TcIngredient.item("minecraft:" + name)).toList()));
         ResearchCategories.addResearch(new BasesResearch(SEED_RESEARCH, Bases.ID, cost, 2, 4, 2, TcStack.of(seed))
-            .setParents("TB.Metalleat", "VOIDMETAL", "INFUSION")
+            .setParents("VOIDMETAL")
             .setPages(ResearchPage.text("tc.research_page." + SEED_RESEARCH + ".1"), ResearchPage.infusion(seed)));
 
         for (String name : List.of("void_shears", "void_flint_and_steel", "void_metal_block", "void_metal_from_block")) {

@@ -52,7 +52,7 @@ final class MetalRods {
         ResearchCategories.addResearch(new BasesResearch(key, Bases.ID,
             new AspectList().add(Aspect.ELDRITCH, 4).add(Aspect.MAGIC, 3).add(Aspect.AURA, 4)
                 .add(Aspect.VOID, 2).add(Aspect.MIND, 6), 7, 4, 3, TcStack.of(voidCore.toString()))
-            .setParents("ROD_tbthaumium", "VOIDMETAL", "INFUSION", "TB.CrystalBlocks", "TB.SMB")
+            .setParents("ROD_tbthaumium", "VOIDMETAL")
             .setPages(ResearchPage.text("tc.research_page." + key + ".1"), ResearchPage.infusion(voidCore.toString())));
     }
 }

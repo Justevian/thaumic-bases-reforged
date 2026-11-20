@@ -97,7 +97,7 @@ final class Rosehip {
             List.of(TcIngredient.item("thaumcraft:glass_phial"), TcIngredient.item(Bases.id("briar_seedbag").toString()),
                 TcIngredient.item("minecraft:sugar"))));
         ResearchCategories.addResearch(new BasesResearch(key, Bases.ID, cost.copy(), -5, 5, 2, TcStack.of(briar))
-            .setParents("TB.BasicPlants").setPages(ResearchPage.text("tc.research_page.TB.Briar.1"),
+            .setParents("TB.Plax").setPages(ResearchPage.text("tc.research_page.TB.Briar.1"),
                 ResearchPage.crucible(briar), ResearchPage.arcane(syrup)));
     }
 }

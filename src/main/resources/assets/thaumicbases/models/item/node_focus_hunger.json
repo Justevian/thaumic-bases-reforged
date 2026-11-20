@@ -1,0 +1,1 @@
+{"parent":"minecraft:block/block","loader":"neoforge:obj","model":"thaumicbases:models/block/node_focus.obj","automatic_culling":false,"emissive_ambient":false,"flip_v":true,"textures":{"particle":"thaumicbases:block/node_focus_hunger","focus":"thaumicbases:block/node_focus_hunger"}}

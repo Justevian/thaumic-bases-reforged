@@ -1,0 +1,7 @@
+newmtl MainMaterial
+Kd 1.0 1.0 1.0
+map_Kd #base
+
+newmtl fociMaterial
+Kd 1.0 1.0 1.0
+map_Kd #focus

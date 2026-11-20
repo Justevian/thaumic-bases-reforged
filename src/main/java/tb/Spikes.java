@@ -118,7 +118,7 @@ final class Spikes {
         String bloodId = Bases.id("bloody_cloth").toString();
         TcRecipes.register(new CrucibleRecipe(bloodId, Kind.IRON.key, TcStack.of(fabric),
             TcIngredient.item(bloodId), new AspectList().add(Aspect.ORDER, 1)));
-        add(Kind.IRON, "CRUCIBLE", "minecraft:iron_nugget", "minecraft:iron_ingot", "minecraft:light_weighted_pressure_plate",
+        add(Kind.IRON, "ENCHFABRIC", "minecraft:iron_nugget", "minecraft:iron_ingot", "minecraft:light_weighted_pressure_plate",
             new AspectList().add(Aspect.FIRE, 1).add(Aspect.ENTROPY, 1));
         add(Kind.THAUMIC, Kind.IRON.key, "thaumcraft:thaumium_nugget", "thaumcraft:thaumium_ingot", id(Kind.IRON), primals(4));
         add(Kind.VOID, Kind.THAUMIC.key, "thaumcraft:void_metal_nugget", "thaumcraft:void_metal_ingot", id(Kind.THAUMIC), primals(4));

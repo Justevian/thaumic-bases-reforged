@@ -72,6 +72,7 @@ public final class Bases {
         MagicalAnvil.register(BLOCKS, ITEMS);
         Overchanter.register(BLOCKS, ITEMS);
         NodeLinker.register(BLOCKS, ITEMS);
+        NodeManipulator.register(BLOCKS, ITEMS);
         EntityDeconstructor.register(BLOCKS, ITEMS);
         ThaumiumFurnace.register(BLOCKS, ITEMS);
         ThaumicRelocator.register(BLOCKS, ITEMS);
@@ -99,6 +100,7 @@ public final class Bases {
         ThaumiumFurnace.registerEntities(bus);
         Overchanter.registerEntities(bus);
         NodeLinker.registerTypes(bus);
+        NodeManipulator.registerTypes(bus);
         EntityDeconstructor.registerEntities(bus);
         bus.addListener((FMLCommonSetupEvent event) -> event.enqueueWork(Bases::research));
     }
@@ -153,8 +155,10 @@ public final class Bases {
         ThaumiumFurnace.research();
         Overchanter.research();
         NodeLinker.research();
+        NodeManipulator.research();
         EntityDeconstructor.research();
         ThaumicRelocator.research();
+        BasesEnchantments.stub();
         BasesEnchantments.research();
         BasesEnchantments.vaporising();
         BasesEnchantments.elderWisdom();

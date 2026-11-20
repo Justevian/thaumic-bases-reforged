@@ -121,7 +121,7 @@ final class FluxPlants {
         var result = TcStack.of(id);
         TcRecipes.register(new CrucibleRecipe(id, key, result, TcIngredient.item(catalyst), cost));
         ResearchCategories.addResearch(new BasesResearch(key, Bases.ID, tags, x, y, 2, result)
-            .setParents("TB.BasicPlants")
+            .setParents("TB.Aurelia")
             .setPages(ResearchPage.text("tc.research_page." + key + ".1"), ResearchPage.crucible(id)));
     }
 }
